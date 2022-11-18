@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.lfsfxy.customer.dao.CustomerDao" >
+    <!--    <select id="findUser" resultType="edu.lfsfxy.customer.entity.SysUser">-->
+    <!--        select * from sys_user where user_code = #{userCode} and user_password = #{pwd}-->
+    <!--    </select>-->
+    <resultMap id="customerResultMap" type="edu.lfsfxy.customer.entity.Customer">
+        <result column="cust_id" property="custId"></result>
+        <result column="cust_name" property="custName"></result>
+        <result column="cust_user_id" property="custUserId"></result>
+        <result column="cust_create_id" property="custCreateId"></result>
+        <result column="cust_source" property="custSource"></result>
+        <result column="cust_industry" property="custIndustry"></result>
+        <result column="cust_level" property="custLevel"></result>
+        <result column="cust_linkman" property="custLinkman"></result>
+        <result column="cust_phone" property="custPhone"></result>
+        <result column="cust_zipcode" property="custZipcode"></result>
+        <result column="cust_mobile" property="custMobile"></result>
+        <result column="cust_address" property="custAddress"></result>
+        <result column="cust_createtime" property="custCreatetime"></result>
+    </resultMap>
+</mapper>
+
+
+
+
+
+

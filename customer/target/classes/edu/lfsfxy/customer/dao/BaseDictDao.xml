@@ -1,0 +1,27 @@
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.lfsfxy.customer.dao.BaseDictDao" >
+    <!--    <select id="findUser" resultType="edu.lfsfxy.customer.entity.SysUser">-->
+    <!--        select * from sys_user where user_code = #{userCode} and user_password = #{pwd}-->
+    <!--    </select>-->
+    <resultMap id="baseDictResultMap" type="edu.lfsfxy.customer.entity.BaseDict">
+        <result column="dict_id" property="dictId"></result>
+        <result column="dict_type_code" property="dictTypeCode"></result>
+        <result column="dict_type_name" property="dictTypeName"></result>
+        <result column="dict_item_name" property="dictItemName"></result>
+        <result column="dict_item_code" property="dictItemCode"></result>
+        <result column="dict_sort" property="dictSort"></result>
+        <result column="dict_enable" property="dictEnable"></result>
+        <result column="dict_memo" property="dictMemo"></result>
+
+    </resultMap>
+</mapper>
+
+
+
+
+
+
